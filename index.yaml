@@ -27,6 +27,6 @@ entries:
     - https://github.com/travelaudience/kubernetes-nexus
     - https://github.com/travelaudience/docker-nexus-backup
     urls:
-    - https://github.com/loxon-whale/charts/releases/download/sonatype-nexus-additional-ports-1.0.0/sonatype-nexus-additional-ports.tgz
+    - https://github.com/loxon-whale/charts/releases/download/sonatype-nexus-additional-ports-1.0.0/sonatype-nexus-additional-ports-1.0.0.tgz
     version: 1.0.0
 generated: "2020-05-12T14:36:45.104392639Z"
