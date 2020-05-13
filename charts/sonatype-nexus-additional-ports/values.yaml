@@ -125,7 +125,9 @@ nexusProxyRoute:
 persistence:
   enabled: true
   accessMode: ReadWriteOnce
-  # persistentVolumeReclaimPolicy: Retain
+  # awsElasticBlockStore:
+  #   fsType: ext4
+  #   volumeID: aws://eu-central-1b/vol-0c1ba1b73c0160007
   ## If defined, storageClass: <storageClass>
   ## If set to "-", storageClass: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClass spec is

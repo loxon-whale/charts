@@ -17,8 +17,9 @@ spec:
   gcePersistentDisk:
     pdName: {{ .Values.persistence.pdName }}
     fsType: {{ .Values.persistence.fsType }}
-  {{- if .Values.persistence.persistentVolumeReclaimPolicy }}
-  persistentVolumeReclaimPolicy: {{ .Values.persistence.persistentVolumeReclaimPolicy }}
+  {{- if .Values.persistence.awsElasticBlockStore }}
+  awsElasticBlockStore:
+{{ toYaml .Values.persistence.awsElasticBlockStore | indent 4 }}
   {{- end }}
 {{- end }}
 {{- end }}
