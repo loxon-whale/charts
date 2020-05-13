@@ -17,7 +17,7 @@ spec:
   gcePersistentDisk:
     pdName: {{ .Values.persistence.pdName }}
     fsType: {{ .Values.persistence.fsType }}
-  {{- if .Values.persistence.reclaimPolicy }}
+  {{- if .Values.persistence.persistentVolumeReclaimPolicy }}
   persistentVolumeReclaimPolicy: {{ .Values.persistence.persistentVolumeReclaimPolicy }}
   {{- end }}
 {{- end }}
