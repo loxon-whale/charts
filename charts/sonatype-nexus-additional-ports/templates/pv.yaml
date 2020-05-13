@@ -14,9 +14,9 @@ spec:
   claimRef:
     namespace: {{ .Release.Namespace }}
     name: {{ template "nexus.fullname" . }}-data
-  gcePersistentDisk:
-    pdName: {{ .Values.persistence.pdName }}
-    fsType: {{ .Values.persistence.fsType }}
+  # gcePersistentDisk:
+  #   pdName: {{ .Values.persistence.pdName }}
+  #   fsType: {{ .Values.persistence.fsType }}
   {{- if .Values.persistence.awsElasticBlockStore }}
   awsElasticBlockStore:
 {{ toYaml .Values.persistence.awsElasticBlockStore | indent 4 }}
